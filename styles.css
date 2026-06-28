@@ -277,6 +277,9 @@ input:focus-visible {
   height: 2px;
   border-radius: 999px;
   background: var(--color-cocoa);
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
 }
 
 .hero {
@@ -584,7 +587,7 @@ input:focus-visible {
 
 .about-photo img {
   width: 100%;
-  aspect-ratio: 1.08;
+  height: clamp(320px, 36vw, 470px);
   border-radius: 10px;
   object-fit: cover;
 }
@@ -654,6 +657,14 @@ input:focus-visible {
 .signup-control .button {
   min-width: 52px;
   padding: 0.85rem 1rem;
+}
+
+.form-status {
+  min-height: 1.35rem;
+  margin: 0.85rem 0 0;
+  color: var(--color-blush-deep);
+  font-size: 0.88rem;
+  font-weight: 700;
 }
 
 .site-footer {
@@ -727,6 +738,18 @@ input:focus-visible {
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0);
+  }
+
+  .menu-open .nav-toggle-line:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .menu-open .nav-toggle-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-open .nav-toggle-line:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
   }
 
   .primary-nav a {
@@ -933,6 +956,10 @@ input:focus-visible {
     padding: 0.75rem 0.75rem 2.8rem;
   }
 
+  .about-photo img {
+    height: clamp(260px, 82vw, 390px);
+  }
+
   .about-photo figcaption {
     right: 1.1rem;
     font-size: 1.15rem;
@@ -959,5 +986,16 @@ input:focus-visible {
   .button {
     width: 100%;
     padding-inline: 0.9rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
   }
 }

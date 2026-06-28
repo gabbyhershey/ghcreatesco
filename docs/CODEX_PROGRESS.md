@@ -19,7 +19,7 @@ Last updated: 2026-06-27
 - [x] Checkpoint 4: Build feature row and product grid.
 - [x] Checkpoint 5: Build about, email signup, footer.
 - [x] Checkpoint 6: Mobile responsive pass.
-- [ ] Checkpoint 7: Polish spacing, shadows, accessibility, image optimization.
+- [x] Checkpoint 7: Polish spacing, shadows, accessibility, image optimization.
 
 ## Project Structure
 
@@ -113,3 +113,9 @@ Product or content image pool:
 - Added tablet and mobile breakpoints for header, navigation menu, hero, feature row, product grid, about, signup, and footer.
 - Added stacked mobile card layouts and adjusted hero image crop/overlay for smaller viewports.
 - Added small-screen button and form behavior to prevent text overflow.
+
+### Checkpoint 7 - 2026-06-27
+
+- Added explicit image dimensions, lazy loading, async decoding, and high-priority hero loading.
+- Added signup confirmation text with polite live-region behavior.
+- Added reduced-motion CSS and animated mobile menu button polish.
