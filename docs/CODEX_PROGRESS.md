@@ -1,7 +1,7 @@
 # Codex Progress
 
 Project: Before I Forget website
-Last updated: 2026-06-27
+Last updated: 2026-06-28
 
 ## Recovery Notes
 
@@ -20,6 +20,7 @@ Last updated: 2026-06-27
 - [x] Checkpoint 5: Build about, email signup, footer.
 - [x] Checkpoint 6: Mobile responsive pass.
 - [x] Checkpoint 7: Polish spacing, shadows, accessibility, image optimization.
+- [x] Typography refinement: Match Before I Forget Instagram brand aesthetic.
 
 ## Project Structure
 
@@ -120,3 +121,9 @@ Product or content image pool:
 - Added signup confirmation text with polite live-region behavior.
 - Added reduced-motion CSS and animated mobile menu button polish.
 - Linked an existing PNG asset as the favicon to avoid missing favicon requests.
+
+### Typography Refinement - 2026-06-28
+
+- Reworked the typography system around editorial Cormorant headings, soft Lora body copy, and delicate Parisienne script accents for the brand/signature moments.
+- Lightened font weights, shifted text toward warm taupe/brown, and changed section labels to airy tracked uppercase with blush accents.
+- Increased whitespace, softened card padding/shadows, made product titles more elegant, and understated product prices.

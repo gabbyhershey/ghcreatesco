@@ -1,23 +1,24 @@
 :root {
-  --color-ivory: #fff8f3;
-  --color-cream: #fffdf9;
-  --color-blush: #eda0a4;
-  --color-blush-deep: #dc7f85;
-  --color-blush-pale: #fde5e2;
-  --color-rose-mist: #fff1ee;
-  --color-cocoa: #6b554c;
-  --color-taupe: #9a8075;
-  --color-line: #efd6ce;
+  --color-ivory: #fff9f5;
+  --color-cream: #fffdf8;
+  --color-blush: #e6a0a2;
+  --color-blush-deep: #c98586;
+  --color-blush-pale: #f8dedb;
+  --color-rose-mist: #fff2ee;
+  --color-cocoa: #675048;
+  --color-taupe: #8d756d;
+  --color-line: #ead5ce;
   --color-white: #ffffff;
-  --shadow-soft: 0 18px 50px rgba(138, 91, 78, 0.13);
-  --shadow-card: 0 14px 32px rgba(138, 91, 78, 0.11);
+  --shadow-soft: 0 24px 64px rgba(127, 86, 75, 0.1);
+  --shadow-card: 0 18px 46px rgba(127, 86, 75, 0.08);
   --font-heading: "Cormorant Garamond", Georgia, serif;
-  --font-body: "Nunito Sans", Arial, sans-serif;
+  --font-body: "Lora", Georgia, serif;
+  --font-script: "Parisienne", "Cormorant Garamond", Georgia, serif;
   --max-width: 1160px;
   --radius-sm: 8px;
   --radius-md: 14px;
   --radius-lg: 26px;
-  --space-section: clamp(64px, 8vw, 112px);
+  --space-section: clamp(90px, 11vw, 156px);
 }
 
 * {
@@ -36,7 +37,8 @@ body {
     linear-gradient(180deg, var(--color-ivory), var(--color-cream));
   font-family: var(--font-body);
   font-size: 16px;
-  line-height: 1.7;
+  font-weight: 400;
+  line-height: 1.85;
 }
 
 body.menu-open {
@@ -94,11 +96,12 @@ input {
 }
 
 .eyebrow {
-  margin: 0 0 0.85rem;
+  margin: 0 0 1.25rem;
   color: var(--color-blush-deep);
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.16em;
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
   line-height: 1.35;
   text-transform: uppercase;
 }
@@ -107,13 +110,13 @@ input {
   margin: 0;
   color: var(--color-cocoa);
   font-family: var(--font-heading);
-  font-size: clamp(2.2rem, 4.4vw, 4.35rem);
-  font-weight: 600;
-  line-height: 0.96;
+  font-size: clamp(2.8rem, 5.1vw, 5.25rem);
+  font-weight: 400;
+  line-height: 0.93;
 }
 
 .section-copy {
-  margin: 1.25rem 0 0;
+  margin: 1.65rem 0 0;
   max-width: 38rem;
   color: var(--color-taupe);
 }
@@ -125,14 +128,15 @@ input {
   min-height: 46px;
   border: 0;
   border-radius: var(--radius-sm);
-  background: linear-gradient(180deg, var(--color-blush), var(--color-blush-deep));
-  box-shadow: 0 12px 24px rgba(220, 127, 133, 0.24);
+  background: linear-gradient(180deg, #e6a0a2, #d48b8c);
+  box-shadow: 0 14px 28px rgba(201, 133, 134, 0.18);
   color: var(--color-white);
   cursor: pointer;
-  font-size: 0.74rem;
-  font-weight: 800;
-  letter-spacing: 0.13em;
-  padding: 0.9rem 1.35rem;
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  padding: 0.95rem 1.55rem;
   text-transform: uppercase;
   transition:
     transform 180ms ease,
@@ -141,7 +145,7 @@ input {
 }
 
 .button:hover {
-  box-shadow: 0 16px 30px rgba(220, 127, 133, 0.28);
+  box-shadow: 0 18px 36px rgba(201, 133, 134, 0.22);
   filter: saturate(1.04);
   transform: translateY(-2px);
 }
@@ -162,7 +166,7 @@ input:focus-visible {
   top: 0;
   z-index: 50;
   border-bottom: 1px solid rgba(239, 214, 206, 0.72);
-  background: rgba(255, 248, 243, 0.91);
+  background: rgba(255, 249, 245, 0.92);
   backdrop-filter: blur(18px);
 }
 
@@ -181,7 +185,7 @@ input:focus-visible {
   align-items: center;
   gap: 0.4rem;
   width: max-content;
-  color: var(--color-cocoa);
+  color: #755d54;
 }
 
 .brand-mark {
@@ -190,10 +194,9 @@ input:focus-visible {
 }
 
 .brand-text {
-  font-family: var(--font-heading);
-  font-size: 1.55rem;
-  font-style: italic;
-  font-weight: 700;
+  font-family: var(--font-script);
+  font-size: 1.8rem;
+  font-weight: 400;
   line-height: 1;
 }
 
@@ -207,9 +210,10 @@ input:focus-visible {
 .primary-nav a {
   position: relative;
   color: #5e463d;
-  font-size: 0.75rem;
-  font-weight: 800;
-  letter-spacing: 0.17em;
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.24em;
   text-transform: uppercase;
 }
 
@@ -284,7 +288,7 @@ input:focus-visible {
 
 .hero {
   position: relative;
-  min-height: min(780px, calc(100vh - 84px));
+  min-height: min(860px, calc(100vh - 84px));
   overflow: hidden;
   border-bottom: 1px solid var(--color-line);
   background: var(--color-rose-mist);
@@ -292,7 +296,7 @@ input:focus-visible {
 
 .hero-image {
   width: 100%;
-  min-height: min(780px, calc(100vh - 84px));
+  min-height: min(860px, calc(100vh - 84px));
   object-fit: cover;
   object-position: center;
 }
@@ -301,8 +305,8 @@ input:focus-visible {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(255, 248, 243, 0.95) 0%, rgba(255, 248, 243, 0.84) 28%, rgba(255, 248, 243, 0.12) 57%),
-    linear-gradient(180deg, rgba(255, 248, 243, 0.1), rgba(255, 248, 243, 0.22));
+    linear-gradient(90deg, rgba(255, 249, 245, 0.96) 0%, rgba(255, 249, 245, 0.82) 30%, rgba(255, 249, 245, 0.08) 60%),
+    linear-gradient(180deg, rgba(255, 249, 245, 0.08), rgba(255, 249, 245, 0.2));
   content: "";
 }
 
@@ -312,13 +316,13 @@ input:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
-  padding: 70px 24px;
+  gap: 3rem;
+  padding: 92px 24px;
   pointer-events: none;
 }
 
 .hero-copy {
-  width: min(100%, 455px);
+  width: min(100%, 500px);
   pointer-events: auto;
 }
 
@@ -326,18 +330,18 @@ input:focus-visible {
   margin: 0;
   color: var(--color-cocoa);
   font-family: var(--font-heading);
-  font-size: clamp(3.7rem, 7.2vw, 6.5rem);
-  font-weight: 600;
+  font-size: clamp(4.25rem, 8vw, 7.65rem);
+  font-weight: 400;
   letter-spacing: 0;
-  line-height: 0.9;
+  line-height: 0.82;
 }
 
 .hero-copy p:not(.eyebrow) {
-  margin: 1.4rem 0 1.75rem;
-  max-width: 25rem;
-  color: #6f5a51;
-  font-size: 1.05rem;
-  line-height: 1.65;
+  margin: 2rem 0 2.25rem;
+  max-width: 27rem;
+  color: #735d55;
+  font-size: 1rem;
+  line-height: 1.85;
 }
 
 .hero-badge {
@@ -353,8 +357,8 @@ input:focus-visible {
     var(--shadow-card);
   color: var(--color-white);
   font-size: 0.74rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
+  font-weight: 500;
+  letter-spacing: 0.16em;
   line-height: 1.45;
   text-align: center;
   text-transform: uppercase;
@@ -364,7 +368,7 @@ input:focus-visible {
 .features {
   border-bottom: 1px solid rgba(239, 214, 206, 0.76);
   background: rgba(255, 253, 249, 0.78);
-  padding: 28px 24px;
+  padding: 48px 24px;
 }
 
 .feature-grid {
@@ -375,8 +379,8 @@ input:focus-visible {
 .feature-card {
   display: grid;
   justify-items: center;
-  min-height: 156px;
-  padding: 0.7rem 2rem 0.3rem;
+  min-height: 188px;
+  padding: 1.35rem 2.45rem 0.95rem;
   text-align: center;
 }
 
@@ -390,7 +394,7 @@ input:focus-visible {
   height: 54px;
   object-fit: contain;
   object-position: center;
-  margin-bottom: 0.55rem;
+  margin-bottom: 0.9rem;
 }
 
 .feature-heart {
@@ -405,35 +409,36 @@ input:focus-visible {
 .feature-card h2 {
   margin: 0;
   color: var(--color-blush-deep);
-  font-size: 0.76rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
   line-height: 1.35;
   text-transform: uppercase;
 }
 
 .feature-card p {
-  margin: 0.55rem 0 0;
+  margin: 0.85rem 0 0;
   max-width: 14rem;
-  color: var(--color-cocoa);
-  font-size: 0.9rem;
-  line-height: 1.55;
+  color: var(--color-taupe);
+  font-size: 0.86rem;
+  line-height: 1.75;
 }
 
 .products {
-  background: linear-gradient(180deg, rgba(255, 253, 249, 0.82), rgba(255, 241, 238, 0.52));
+  background: linear-gradient(180deg, rgba(255, 253, 248, 0.88), rgba(255, 242, 238, 0.44));
 }
 
 .section-heading {
-  margin: 0 auto 2.35rem;
-  max-width: 720px;
+  margin: 0 auto 3.55rem;
+  max-width: 800px;
   text-align: center;
 }
 
 .product-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  gap: 34px;
 }
 
 .product-card a {
@@ -441,10 +446,10 @@ input:focus-visible {
   height: 100%;
   border: 1px solid var(--color-line);
   border-radius: var(--radius-md);
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.66);
   box-shadow: var(--shadow-card);
   overflow: hidden;
-  padding: 1rem 1rem 1.35rem;
+  padding: 1.35rem 1.35rem 1.85rem;
   text-align: center;
   transition:
     border-color 180ms ease,
@@ -454,7 +459,7 @@ input:focus-visible {
 
 .product-card a:hover {
   border-color: rgba(220, 127, 133, 0.48);
-  box-shadow: 0 18px 44px rgba(138, 91, 78, 0.16);
+  box-shadow: 0 24px 58px rgba(127, 86, 75, 0.12);
   transform: translateY(-4px);
 }
 
@@ -464,7 +469,7 @@ input:focus-visible {
   aspect-ratio: 1.08;
   border-radius: 10px;
   background:
-    linear-gradient(180deg, rgba(255, 248, 243, 0.1), rgba(255, 241, 238, 0.78)),
+    linear-gradient(180deg, rgba(255, 249, 245, 0.16), rgba(255, 242, 238, 0.72)),
     var(--color-white);
   overflow: hidden;
 }
@@ -473,7 +478,7 @@ input:focus-visible {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  padding: 0.45rem;
+  padding: 0.65rem;
   transition: transform 220ms ease;
 }
 
@@ -482,20 +487,20 @@ input:focus-visible {
 }
 
 .product-card h3 {
-  margin: 1.05rem auto 0;
-  max-width: 13rem;
+  margin: 1.45rem auto 0;
+  max-width: 14.5rem;
   color: var(--color-cocoa);
   font-family: var(--font-heading);
-  font-size: 1.32rem;
-  font-weight: 600;
+  font-size: 1.48rem;
+  font-weight: 400;
   line-height: 1.18;
 }
 
 .product-card p {
-  margin: 0.65rem 0 0;
-  color: var(--color-cocoa);
-  font-size: 0.95rem;
-  line-height: 1.3;
+  margin: 0.9rem 0 0;
+  color: var(--color-taupe);
+  font-size: 0.78rem;
+  line-height: 1.35;
 }
 
 .product-card p span {
@@ -505,13 +510,13 @@ input:focus-visible {
 .product-action {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 3.1rem;
 }
 
 .about {
   position: relative;
   overflow: hidden;
-  background: rgba(255, 248, 243, 0.82);
+  background: rgba(255, 249, 245, 0.82);
 }
 
 .about::before,
@@ -544,11 +549,11 @@ input:focus-visible {
   display: grid;
   grid-template-columns: minmax(0, 0.82fr) minmax(280px, 0.78fr);
   align-items: center;
-  gap: clamp(2.5rem, 8vw, 7rem);
+  gap: clamp(3.5rem, 9vw, 8.75rem);
 }
 
 .about-copy p:not(.eyebrow):not(.section-copy) {
-  margin: 1rem 0 1.85rem;
+  margin: 1.45rem 0 2.55rem;
   max-width: 34rem;
   color: var(--color-taupe);
 }
@@ -558,9 +563,9 @@ input:focus-visible {
   margin: 0;
   border: 1px solid var(--color-line);
   border-radius: var(--radius-md);
-  background: var(--color-white);
+  background: rgba(255, 255, 255, 0.76);
   box-shadow: var(--shadow-soft);
-  padding: 1rem 1rem 3.1rem;
+  padding: 1.25rem 1.25rem 3.35rem;
   transform: rotate(-1.5deg);
 }
 
@@ -597,23 +602,23 @@ input:focus-visible {
   right: 1.6rem;
   bottom: 0.95rem;
   color: var(--color-cocoa);
-  font-family: var(--font-heading);
-  font-size: 1.35rem;
-  font-style: italic;
+  font-family: var(--font-script);
+  font-size: 1.55rem;
+  font-weight: 400;
   line-height: 0.95;
   text-align: center;
 }
 
 .signup {
   border-block: 1px solid rgba(239, 214, 206, 0.78);
-  background: linear-gradient(90deg, rgba(255, 241, 238, 0.9), rgba(255, 253, 249, 0.9));
+  background: linear-gradient(90deg, rgba(255, 242, 238, 0.84), rgba(255, 253, 248, 0.92));
 }
 
 .signup-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
   align-items: center;
-  gap: clamp(2rem, 6vw, 5rem);
+  gap: clamp(3rem, 7vw, 6.25rem);
 }
 
 .signup .section-title {
@@ -623,21 +628,22 @@ input:focus-visible {
 .signup-form {
   border: 1px solid var(--color-line);
   border-radius: var(--radius-md);
-  background: rgba(255, 255, 255, 0.76);
+  background: rgba(255, 255, 255, 0.68);
   box-shadow: var(--shadow-card);
-  padding: 1.45rem;
+  padding: 2rem;
 }
 
 .signup-form label {
   display: block;
-  margin-bottom: 1.1rem;
+  margin-bottom: 1.45rem;
   color: var(--color-taupe);
+  font-size: 0.94rem;
 }
 
 .signup-control {
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 0.6rem;
+  gap: 0.75rem;
 }
 
 .signup-control input {
@@ -647,7 +653,7 @@ input:focus-visible {
   background: var(--color-white);
   color: var(--color-cocoa);
   min-height: 48px;
-  padding: 0.85rem 1rem;
+  padding: 0.9rem 1rem;
 }
 
 .signup-control input::placeholder {
@@ -664,25 +670,25 @@ input:focus-visible {
   margin: 0.85rem 0 0;
   color: var(--color-blush-deep);
   font-size: 0.88rem;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .site-footer {
   background: var(--color-ivory);
   color: var(--color-taupe);
-  padding: 26px 24px;
+  padding: 36px 24px;
 }
 
 .footer-inner {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  gap: 1.3rem;
+  gap: 1.75rem;
 }
 
 .footer-inner p {
   margin: 0;
-  font-size: 0.86rem;
+  font-size: 0.78rem;
   text-align: center;
 }
 
@@ -690,13 +696,13 @@ input:focus-visible {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 1rem;
+  gap: 1.35rem;
 }
 
 .footer-nav a {
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
+  font-size: 0.66rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
 }
 
@@ -834,7 +840,7 @@ input:focus-visible {
   }
 
   .site-section {
-    padding: 56px 18px;
+    padding: 72px 18px;
   }
 
   .header-inner {
@@ -843,7 +849,7 @@ input:focus-visible {
   }
 
   .brand-text {
-    font-size: 1.25rem;
+    font-size: 1.45rem;
   }
 
   .header-actions {
@@ -885,7 +891,7 @@ input:focus-visible {
   }
 
   .hero-copy h1 {
-    font-size: clamp(3.05rem, 16vw, 4rem);
+    font-size: clamp(3.35rem, 16vw, 4.35rem);
   }
 
   .hero-copy p:not(.eyebrow) {
@@ -897,7 +903,7 @@ input:focus-visible {
   }
 
   .features {
-    padding: 16px 18px;
+    padding: 28px 18px;
   }
 
   .feature-grid,
@@ -918,19 +924,19 @@ input:focus-visible {
 
   .feature-card {
     min-height: auto;
-    padding: 1.25rem 0.7rem;
+    padding: 1.8rem 0.9rem;
   }
 
   .section-heading {
-    margin-bottom: 1.6rem;
+    margin-bottom: 2.2rem;
   }
 
   .product-grid {
-    gap: 18px;
+    gap: 26px;
   }
 
   .product-card a {
-    padding: 0.85rem 0.85rem 1.25rem;
+    padding: 1.15rem 1.15rem 1.6rem;
   }
 
   .product-image-wrap {
@@ -949,11 +955,11 @@ input:focus-visible {
   }
 
   .about-grid {
-    gap: 2rem;
+    gap: 2.8rem;
   }
 
   .about-photo {
-    padding: 0.75rem 0.75rem 2.8rem;
+    padding: 0.95rem 0.95rem 3rem;
   }
 
   .about-photo img {
@@ -962,7 +968,7 @@ input:focus-visible {
 
   .about-photo figcaption {
     right: 1.1rem;
-    font-size: 1.15rem;
+    font-size: 1.35rem;
   }
 
   .signup-control {
@@ -976,11 +982,11 @@ input:focus-visible {
 
 @media (max-width: 380px) {
   .brand-text {
-    font-size: 1.08rem;
+    font-size: 1.25rem;
   }
 
   .hero-copy h1 {
-    font-size: 2.8rem;
+    font-size: 3.05rem;
   }
 
   .button {
