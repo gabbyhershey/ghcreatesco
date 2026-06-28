@@ -18,7 +18,7 @@ Last updated: 2026-06-27
 - [x] Checkpoint 3: Build header and hero only.
 - [x] Checkpoint 4: Build feature row and product grid.
 - [x] Checkpoint 5: Build about, email signup, footer.
-- [ ] Checkpoint 6: Mobile responsive pass.
+- [x] Checkpoint 6: Mobile responsive pass.
 - [ ] Checkpoint 7: Polish spacing, shadows, accessibility, image optimization.
 
 ## Project Structure
@@ -107,3 +107,9 @@ Product or content image pool:
 - Added about section with brand story copy and `placeholder.png` for the missing lifestyle photo.
 - Added email signup section with accessible email input and button.
 - Added footer with brand, copyright, and secondary links.
+
+### Checkpoint 6 - 2026-06-27
+
+- Added tablet and mobile breakpoints for header, navigation menu, hero, feature row, product grid, about, signup, and footer.
+- Added stacked mobile card layouts and adjusted hero image crop/overlay for smaller viewports.
+- Added small-screen button and form behavior to prevent text overflow.
