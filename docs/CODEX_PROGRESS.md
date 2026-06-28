@@ -16,7 +16,7 @@ Last updated: 2026-06-27
 - [x] Checkpoint 1: Inspect project and assets. Create progress file with project structure and asset map.
 - [x] Checkpoint 2: Build design tokens/colors/fonts/layout shell.
 - [x] Checkpoint 3: Build header and hero only.
-- [ ] Checkpoint 4: Build feature row and product grid.
+- [x] Checkpoint 4: Build feature row and product grid.
 - [ ] Checkpoint 5: Build about, email signup, footer.
 - [ ] Checkpoint 6: Mobile responsive pass.
 - [ ] Checkpoint 7: Polish spacing, shadows, accessibility, image optimization.
@@ -95,3 +95,9 @@ Product or content image pool:
 - Built sticky header with brand, primary navigation, and shop/search actions.
 - Added hero section using `assets/flatlay.png`, with headline, supporting copy, CTA, and circular love badge.
 - Added menu-toggle JavaScript hook for the future mobile responsive pass.
+
+### Checkpoint 4 - 2026-06-27
+
+- Added four-column feature row for love, instant download, Goodnotes readiness, and lifestyle inspiration.
+- Added bestseller product grid with four cards using existing PNG assets.
+- Added product CTA and soft card hover states.
