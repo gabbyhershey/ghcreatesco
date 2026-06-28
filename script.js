@@ -17,3 +17,8 @@ primaryNav?.addEventListener("click", (event) => {
     setBodyMenuState(false);
   }
 });
+
+document.querySelector(".signup-form")?.addEventListener("submit", (event) => {
+  event.preventDefault();
+  event.currentTarget.reset();
+});

@@ -149,9 +149,65 @@
           </div>
         </div>
       </section>
-      <section class="site-section" aria-label="About"></section>
-      <section class="site-section" aria-label="Stay connected"></section>
+      <section class="about site-section" id="about" aria-labelledby="about-title">
+        <div class="section-inner about-grid">
+          <div class="about-copy">
+            <p class="eyebrow">♥ Hi, I'm Jenny ♥</p>
+            <h2 class="section-title" id="about-title">The heart behind Before I Forget</h2>
+            <p class="section-copy">
+              I created this space to share all the little things that make life
+              feel softer, sweeter, and more intentional.
+            </p>
+            <p>
+              Thank you for being here and supporting my small shop. It truly
+              means the world.
+            </p>
+            <a class="button" href="#about-more">Learn more about me <span aria-hidden="true">♥</span></a>
+          </div>
+
+          <figure class="about-photo">
+            <img
+              src="placeholder.png"
+              alt="Placeholder for a warm lifestyle photo of the Before I Forget studio"
+            />
+            <figcaption>thank you<br />for being here <span aria-hidden="true">♡</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="signup site-section" id="contact" aria-labelledby="signup-title">
+        <div class="section-inner signup-grid">
+          <div>
+            <p class="eyebrow">♥ Stay connected ♥</p>
+            <h2 class="section-title" id="signup-title">Sweet notes for your inbox.</h2>
+          </div>
+          <form class="signup-form" action="#" method="post">
+            <label for="email">Get updates on new releases, freebies, and cozy inspiration.</label>
+            <div class="signup-control">
+              <input id="email" name="email" type="email" placeholder="Your email" autocomplete="email" required />
+              <button class="button" type="submit" aria-label="Join email list">♥</button>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="section-inner footer-inner">
+        <a class="brand" href="#" aria-label="Before I Forget home">
+          <span class="brand-mark" aria-hidden="true">♥</span>
+          <span class="brand-text">before i forget</span>
+        </a>
+        <p>© 2026 Before I Forget. All rights reserved.</p>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#shop">Shop</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+          <a href="#terms">Terms</a>
+          <a href="#privacy">Privacy</a>
+        </nav>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
