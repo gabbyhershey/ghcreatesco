@@ -119,3 +119,4 @@ Product or content image pool:
 - Added explicit image dimensions, lazy loading, async decoding, and high-priority hero loading.
 - Added signup confirmation text with polite live-region behavior.
 - Added reduced-motion CSS and animated mobile menu button polish.
+- Linked an existing PNG asset as the favicon to avoid missing favicon requests.
