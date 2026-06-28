@@ -14,7 +14,7 @@ Last updated: 2026-06-27
 ## Checkpoints
 
 - [x] Checkpoint 1: Inspect project and assets. Create progress file with project structure and asset map.
-- [ ] Checkpoint 2: Build design tokens/colors/fonts/layout shell.
+- [x] Checkpoint 2: Build design tokens/colors/fonts/layout shell.
 - [ ] Checkpoint 3: Build header and hero only.
 - [ ] Checkpoint 4: Build feature row and product grid.
 - [ ] Checkpoint 5: Build about, email signup, footer.
@@ -82,3 +82,10 @@ Product or content image pool:
 - Confirmed no existing site shell was present.
 - Added this progress file and `.gitignore`.
 - Initialized git repository for checkpoint commits.
+
+### Checkpoint 2 - 2026-06-27
+
+- Added `index.html`, `styles.css`, and `script.js`.
+- Defined design tokens for ivory, blush, cocoa, taupe, shadows, radii, typography, and section spacing.
+- Added base HTML metadata, font loading, skip link, empty layout sections, shared button styles, and focus states.
+- Added the site asset folder and `placeholder.png` to version control; kept `mockup.png` as a local reference.
