@@ -15,7 +15,7 @@ Last updated: 2026-06-27
 
 - [x] Checkpoint 1: Inspect project and assets. Create progress file with project structure and asset map.
 - [x] Checkpoint 2: Build design tokens/colors/fonts/layout shell.
-- [ ] Checkpoint 3: Build header and hero only.
+- [x] Checkpoint 3: Build header and hero only.
 - [ ] Checkpoint 4: Build feature row and product grid.
 - [ ] Checkpoint 5: Build about, email signup, footer.
 - [ ] Checkpoint 6: Mobile responsive pass.
@@ -89,3 +89,9 @@ Product or content image pool:
 - Defined design tokens for ivory, blush, cocoa, taupe, shadows, radii, typography, and section spacing.
 - Added base HTML metadata, font loading, skip link, empty layout sections, shared button styles, and focus states.
 - Added the site asset folder and `placeholder.png` to version control; kept `mockup.png` as a local reference.
+
+### Checkpoint 3 - 2026-06-27
+
+- Built sticky header with brand, primary navigation, and shop/search actions.
+- Added hero section using `assets/flatlay.png`, with headline, supporting copy, CTA, and circular love badge.
+- Added menu-toggle JavaScript hook for the future mobile responsive pass.

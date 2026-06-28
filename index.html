@@ -19,10 +19,60 @@
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#" aria-label="Before I Forget home">
+          <span class="brand-mark" aria-hidden="true">♥</span>
+          <span class="brand-text">before i forget</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+          <a class="is-active" href="#">Home</a>
+          <a href="#shop">Shop</a>
+          <a href="#about">About</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions" aria-label="Shop actions">
+          <a class="icon-button" href="#search" aria-label="Search">⌕</a>
+          <a class="icon-button" href="#cart" aria-label="Cart">♡</a>
+        </div>
+      </div>
+    </header>
+
     <main id="main">
-      <section class="site-section site-section--hero" aria-label="Hero"></section>
+      <section class="hero" aria-label="Before I Forget digital stationery">
+        <img
+          class="hero-image"
+          src="assets/flatlay.png"
+          alt="A soft pink stationery flatlay with a journal, candle, flowers, stickers, and macarons"
+        />
+        <div class="hero-overlay section-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">♥ Digital goodies for ♥</p>
+            <h1>A more beautiful everyday</h1>
+            <p>
+              Digital stickers, journals, and templates made to inspire your
+              soft girl life.
+            </p>
+            <a class="button" href="#shop">Shop the collection <span aria-hidden="true">♥</span></a>
+          </div>
+          <div class="hero-badge" aria-label="Made with love for your daily journey">
+            <span>Made with<br />love for<br />your daily<br />journey</span>
+            <span aria-hidden="true">♥</span>
+          </div>
+        </div>
+      </section>
       <section class="site-section" aria-label="Features"></section>
-      <section class="site-section" aria-label="Products"></section>
+      <section class="site-section" id="shop" aria-label="Products"></section>
       <section class="site-section" aria-label="About"></section>
       <section class="site-section" aria-label="Stay connected"></section>
     </main>
