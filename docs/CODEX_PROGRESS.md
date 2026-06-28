@@ -21,6 +21,7 @@ Last updated: 2026-06-28
 - [x] Checkpoint 6: Mobile responsive pass.
 - [x] Checkpoint 7: Polish spacing, shadows, accessibility, image optimization.
 - [x] Typography refinement: Match Before I Forget Instagram brand aesthetic.
+- [x] Cloudflare static hosting prep.
 
 ## Project Structure
 
@@ -127,3 +128,9 @@ Product or content image pool:
 - Reworked the typography system around editorial Cormorant headings, soft Lora body copy, and delicate Parisienne script accents for the brand/signature moments.
 - Lightened font weights, shifted text toward warm taupe/brown, and changed section labels to airy tracked uppercase with blush accents.
 - Increased whitespace, softened card padding/shadows, made product titles more elegant, and understated product prices.
+
+### Cloudflare Static Hosting Prep - 2026-06-28
+
+- Confirmed the site is static and can deploy from the repository root with no build command.
+- Added `_headers` for basic security headers and asset caching on Cloudflare Pages.
+- Added `docs/CLOUDFLARE_DEPLOY.md` with free-tier Pages deployment settings and notes.
