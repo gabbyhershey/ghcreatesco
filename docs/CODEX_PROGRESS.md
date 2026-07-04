@@ -134,3 +134,33 @@ Product or content image pool:
 - Confirmed the site is static and can deploy from the repository root with no build command.
 - Added `_headers` for basic security headers and asset caching on Cloudflare Pages.
 - Added `docs/CLOUDFLARE_DEPLOY.md` with free-tier Pages deployment settings and notes.
+
+### About Photo Update - 2026-07-03
+
+- Replaced the about section placeholder image with `assets/instagramPhoto/5-camera.png`.
+- Updated the image dimensions and alt text for the new lifestyle flatlay photo.
+- Verified the change locally at `http://localhost:8080/?about-photo=1#about`.
+
+### Dotted Notebook Product Update - 2026-07-03
+
+- Updated the fourth product card to `Dotted Notebook Pages`.
+- Changed the product link to `https://payhip.com/b/V1t7P`.
+- Changed the price display to `Free`.
+- Replaced the product image with `assets/products/dotNoteBook.png`.
+- Updated the `View all products` CTA to link to `https://payhip.com/ghcreatesco`.
+
+### Payhip Signup CTA - 2026-07-03
+
+- Replaced the brittle copied Payhip follower POST with a reliable Payhip shop CTA.
+- Removed the local demo signup handler and hidden Payhip form fields.
+- Updated the signup section to send visitors to `https://payhip.com/ghcreatesco`.
+- Changed the CTA to deep-link to Payhip's follow section: `https://payhip.com/ghcreatesco#content-section-8B1pj1J2zZ`.
+- Removed the homepage signup/follow section and cleaned up its unused CSS.
+- Removed unused FAQ, Terms, and Privacy navigation links.
+- Updated the footer copyright name to `GH Creates`.
+- Renamed the footer contact link to `Instagram`, leaving only Shop and Instagram links below.
+
+### Heart Favicon - 2026-07-03
+
+- Replaced the reused product-style favicon with `assets/favicon-heart.png`.
+- Updated the favicon link to use the simple blush heart mark.

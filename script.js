@@ -17,12 +17,3 @@ primaryNav?.addEventListener("click", (event) => {
     setBodyMenuState(false);
   }
 });
-
-document.querySelector(".signup-form")?.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const status = event.currentTarget.querySelector(".form-status");
-  event.currentTarget.reset();
-  if (status) {
-    status.textContent = "Thank you. You are on the list.";
-  }
-});

@@ -345,10 +345,16 @@ input:focus-visible {
 }
 
 .hero-badge {
-  display: grid;
-  place-items: center;
-  width: clamp(116px, 13vw, 150px);
-  aspect-ratio: 1;
+  --badge-size: clamp(164px, 15vw, 190px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 0 0 var(--badge-size);
+  gap: 0.55rem;
+  width: var(--badge-size);
+  height: var(--badge-size);
   border: 2px dashed rgba(255, 255, 255, 0.84);
   border-radius: 999px;
   background: rgba(220, 127, 133, 0.74);
@@ -356,13 +362,24 @@ input:focus-visible {
     inset 0 0 0 8px rgba(255, 255, 255, 0.23),
     var(--shadow-card);
   color: var(--color-white);
-  font-size: 0.74rem;
+  font-size: clamp(0.66rem, 0.82vw, 0.78rem);
   font-weight: 500;
-  letter-spacing: 0.16em;
-  line-height: 1.45;
+  letter-spacing: 0.15em;
+  line-height: 1.36;
+  padding: 1.05rem;
   text-align: center;
   text-transform: uppercase;
   transform: translateY(-120px);
+}
+
+.hero-badge span:first-child {
+  display: block;
+}
+
+.hero-badge span:last-child {
+  display: block;
+  font-size: 1.15rem;
+  line-height: 1;
 }
 
 .features {
@@ -388,21 +405,23 @@ input:focus-visible {
   border-left: 1px solid var(--color-line);
 }
 
-.feature-card img,
-.feature-heart {
-  width: 54px;
-  height: 54px;
-  object-fit: contain;
-  object-position: center;
-  margin-bottom: 0.9rem;
-}
-
-.feature-heart {
-  display: grid;
+.feature-icon {
+  display: inline-grid;
   place-items: center;
-  color: var(--color-blush);
+  width: 68px;
+  height: 68px;
+  margin-bottom: 0.9rem;
+  border: 1px solid rgba(230, 160, 162, 0.42);
+  border-radius: 999px;
+  background:
+    radial-gradient(circle, rgba(255, 249, 245, 0.82) 0 42%, rgba(248, 222, 219, 0.5) 43% 100%);
+  box-shadow:
+    inset 0 0 0 8px rgba(255, 255, 255, 0.5),
+    0 8px 20px rgba(201, 133, 134, 0.08);
+  color: var(--color-blush-deep);
   font-family: var(--font-heading);
-  font-size: 3rem;
+  font-size: 2rem;
+  font-weight: 400;
   line-height: 1;
 }
 
@@ -482,6 +501,10 @@ input:focus-visible {
   transition: transform 220ms ease;
 }
 
+.product-image-wrap--book img {
+  padding: 0.35rem;
+}
+
 .product-card a:hover img {
   transform: scale(1.025);
 }
@@ -505,6 +528,33 @@ input:focus-visible {
 
 .product-card p span {
   color: var(--color-blush-deep);
+}
+
+.product-price {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.product-price .price-original {
+  color: #ad9289;
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+
+.product-price .price-note {
+  color: var(--color-blush-deep);
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.product-price strong {
+  color: var(--color-cocoa);
+  font-size: 0.98rem;
+  font-weight: 500;
 }
 
 .product-action {
@@ -607,70 +657,6 @@ input:focus-visible {
   font-weight: 400;
   line-height: 0.95;
   text-align: center;
-}
-
-.signup {
-  border-block: 1px solid rgba(239, 214, 206, 0.78);
-  background: linear-gradient(90deg, rgba(255, 242, 238, 0.84), rgba(255, 253, 248, 0.92));
-}
-
-.signup-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
-  align-items: center;
-  gap: clamp(3rem, 7vw, 6.25rem);
-}
-
-.signup .section-title {
-  max-width: 560px;
-}
-
-.signup-form {
-  border: 1px solid var(--color-line);
-  border-radius: var(--radius-md);
-  background: rgba(255, 255, 255, 0.68);
-  box-shadow: var(--shadow-card);
-  padding: 2rem;
-}
-
-.signup-form label {
-  display: block;
-  margin-bottom: 1.45rem;
-  color: var(--color-taupe);
-  font-size: 0.94rem;
-}
-
-.signup-control {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 0.75rem;
-}
-
-.signup-control input {
-  min-width: 0;
-  border: 1px solid var(--color-line);
-  border-radius: var(--radius-sm);
-  background: var(--color-white);
-  color: var(--color-cocoa);
-  min-height: 48px;
-  padding: 0.9rem 1rem;
-}
-
-.signup-control input::placeholder {
-  color: #b79a90;
-}
-
-.signup-control .button {
-  min-width: 52px;
-  padding: 0.85rem 1rem;
-}
-
-.form-status {
-  min-height: 1.35rem;
-  margin: 0.85rem 0 0;
-  color: var(--color-blush-deep);
-  font-size: 0.88rem;
-  font-weight: 500;
 }
 
 .site-footer {
@@ -810,8 +796,7 @@ input:focus-visible {
     border-left: 0;
   }
 
-  .about-grid,
-  .signup-grid {
+  .about-grid {
     grid-template-columns: 1fr;
   }
 
@@ -971,13 +956,6 @@ input:focus-visible {
     font-size: 1.35rem;
   }
 
-  .signup-control {
-    grid-template-columns: 1fr;
-  }
-
-  .signup-control .button {
-    width: 100%;
-  }
 }
 
 @media (max-width: 380px) {
