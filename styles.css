@@ -589,7 +589,7 @@ input:focus-visible {
 .about::after {
   right: clamp(18px, 6vw, 88px);
   top: 52px;
-  background-image: url("assets/126618FB-B681-4865-A476-2BA3F8513F64.png");
+  background-image: url("assets/products/softgirlSummer/stickers/pink-watercolor-bow.png");
   transform: rotate(9deg);
 }
 
