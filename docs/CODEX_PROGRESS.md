@@ -160,6 +160,7 @@ Product or content image pool:
 - Updated the footer copyright name to `GH Creates`.
 - Renamed the footer contact link to `Instagram`, leaving only Shop and Instagram links below.
 - Updated the about eyebrow to `Hi, I'm Gabby` and swapped the decorative bow to the transparent soft girl summer sticker asset.
+- Renamed the visible header/footer brand link text to `ghcretesco`.
 
 ### Heart Favicon - 2026-07-03
 
