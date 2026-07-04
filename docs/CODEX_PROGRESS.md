@@ -163,6 +163,7 @@ Product or content image pool:
 - Renamed the visible header/footer brand link text to `ghcretesco`.
 - Updated header brand and nav typography to use Cormorant Garamond.
 - Updated the footer copyright name to `GHCreatesCo`.
+- Cache-busted the stylesheet and refined the visible brand wordmark to use Cormorant Garamond while staying lowercase.
 
 ### Heart Favicon - 2026-07-03
 

@@ -193,13 +193,13 @@ input:focus-visible {
   font-size: 0.92rem;
 }
 
-.brand-text {
+.brand .brand-text {
   font-family: var(--font-heading);
-  font-size: 1.05rem;
+  font-size: 1.42rem;
   font-weight: 500;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.045em;
   line-height: 1.1;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .primary-nav {
