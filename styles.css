@@ -854,43 +854,8 @@ input:focus-visible {
   }
 
   .hero,
-  .hero-image {
-    min-height: 690px;
-  }
-
-  .hero-image {
-    object-position: 70% center;
-  }
-
-  .hero::before {
-    background:
-      linear-gradient(180deg, rgba(255, 248, 243, 0.96) 0%, rgba(255, 248, 243, 0.82) 45%, rgba(255, 248, 243, 0.08) 100%),
-      linear-gradient(90deg, rgba(255, 248, 243, 0.9), rgba(255, 248, 243, 0.2));
-  }
-
-  .hero-overlay {
-    align-items: flex-start;
-    padding: 68px 18px 32px;
-  }
-
-  .hero-copy {
-    width: min(100%, 340px);
-  }
-
-  .hero-copy h1 {
-    font-size: clamp(3.35rem, 16vw, 4.35rem);
-  }
-
-  .hero-copy p:not(.eyebrow) {
-    font-size: 0.98rem;
-  }
-
-  .hero-badge {
-    display: none;
-  }
-
   .features {
-    padding: 28px 18px;
+    display: none;
   }
 
   .feature-grid,
